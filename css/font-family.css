@@ -1,0 +1,77 @@
+#app {
+	position: absolute;
+	padding: 25px 35px;
+	text-align: center;
+
+	min-width: 100%;
+	min-height: 100%;
+	background-image: url(../img/timg_1.jfif);
+	/* background-size: 100%; */
+	box-shadow: inset 0 0 100px black;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+	width: 1px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+	background-color: dimgray;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+	background-color: black;
+}
+
+.font-box {
+	display: inline-block;
+	text-align: left;
+	padding: 0 25px;
+	margin: 15px;
+	background-color: rgba(50, 100, 200, 0.6);
+	box-shadow: 0 0 30px black;
+	border-radius: 10px;
+}
+
+.font-box:hover {
+	background-color: rgba(150, 200, 255, 0.6);
+	transform: scale(1.3);
+}
+
+.font-box:hover>p {
+	color: currentcolor;
+}
+
+.font-box:hover>p[name='info'] {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.font-box>p {
+	color: cornsilk;
+	letter-spacing: 2px;
+}
+
+.font-box>p[name='title'] {
+	max-width: 450px;
+	font-size: 24px;
+	font-weight: 900;
+	padding-top: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.font-box>p[name='title']:hover {
+	text-shadow: 0 0 10px white;
+}
+
+.font-box>p[name='info'] {
+	padding: 10px 20px;
+	font-size: 16px;
+	line-height: 22px;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 0 5px black;
+}
