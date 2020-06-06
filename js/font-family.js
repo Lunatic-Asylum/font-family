@@ -1,7 +1,7 @@
 var testContent =
 	"ABCDEFG HIJKLMN</br>OPQ RST UVW XYZ</br>abcdefg hijklmn</br>opq rst uvw xyz</br>0123456789</br>零壹贰叁肆伍陆柒捌玖";
 
-$(() => {
+$(function() {
 	var app = new Vue({
 		el: "#app",
 		data: {
