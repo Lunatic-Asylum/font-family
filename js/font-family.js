@@ -9,16 +9,16 @@ $(function() {
 			testContent: testContent
 		},
 		methods: {
-			init() {
+			init:function() {
 				let that = this;
 				$.get('json/default-family.json', function(data) {
 					that.familys = data;
 				});
 			},
-			change(event) {
+			change:function(event) {
 				this.testContent = event.currentTarget.innerHTML;
 			},
-			copy(data) {
+			copy:function(data) {
 				let url = data;
 				let oInput = document.createElement('input');
 				oInput.value = url;
